@@ -62,8 +62,8 @@ export const ContactSection = () => {
   };
 
   const socialLinks = [
-    { name: "GitHub", icon: <Github size={20} />, url: "https://github.com" },
-    { name: "LinkedIn", icon: <Linkedin size={20} />, url: "https://linkedin.com" },
+    { name: "GitHub", icon: <Github size={20} />, url: "https://github.com/bhanuprakash1312" },
+    { name: "LinkedIn", icon: <Linkedin size={20} />, url: "https://linkedin.com/in/bhanuprakash-p-0441ba2bb" },
     
   ];
 
@@ -224,7 +224,7 @@ export const ContactSection = () => {
                   href="mailto:hello@example.com"
                   className="hover:text-primary transition-colors"
                 >
-                  alex@example.com
+                  bp136897@gmail.com
                 </a>
               </div>
 
