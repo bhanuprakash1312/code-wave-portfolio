@@ -1,7 +1,8 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Code, Cpu, Coffee, Music, Sparkles } from "lucide-react";
+import {  Cpu, Coffee, Music, Sparkles } from "lucide-react";
+import bhanu from "../asstets/bhanu.jpg"
 
 export const AboutSection = () => {
   const [ref, inView] = useInView({
@@ -94,7 +95,10 @@ export const AboutSection = () => {
             <div className="relative aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-purple to-accent opacity-20 rounded-2xl -z-10 blur-3xl" />
               <div className="rounded-2xl overflow-hidden border border-border p-4 bg-card h-full flex items-center justify-center card-glow">
-                {/* <Code size={80} className="text-primary opacity-90" /> */}
+                <img
+                  src={bhanu}
+                  alt="Profile"
+                  />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary rounded-full opacity-30 blur-2xl" />
                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-purple rounded-full opacity-20 blur-2xl" />
               </div>

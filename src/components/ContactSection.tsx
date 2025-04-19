@@ -64,7 +64,7 @@ export const ContactSection = () => {
   const socialLinks = [
     { name: "GitHub", icon: <Github size={20} />, url: "https://github.com" },
     { name: "LinkedIn", icon: <Linkedin size={20} />, url: "https://linkedin.com" },
-    { name: "Twitter", icon: <Twitter size={20} />, url: "https://twitter.com" },
+    
   ];
 
   return (

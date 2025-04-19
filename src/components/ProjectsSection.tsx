@@ -2,7 +2,9 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ExternalLink, Github, Layers } from "lucide-react";
-
+import pro1 from "../asstets/pro1.png";
+import pro2 from "../asstets/pro2.png";
+import pro3 from "../asstets/pro3.png";
 type Project = {
   id: number;
   title: string;
@@ -16,40 +18,32 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "TaskFlow",
-    description: "A modern task management app with drag-and-drop functionality, built with React and styled with Tailwind CSS.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80",
+    title: "Netflix Clone",
+    description: "A Netflix Clone  built with React , Firebase and styled with Tailwind CSS.",
+    image: pro1,
     techStack: ["React", "Tailwind CSS", "DND Kit", "LocalStorage"],
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/bhanuprakash1312/react.git",
+    liveUrl: "http://moviestream-rho.vercel.app/",
   },
   {
     id: 2,
-    title: "Weather Dashboard",
-    description: "A responsive weather application that displays current weather data and forecasts for any location.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=700&q=80",
-    techStack: ["React", "WeatherAPI", "CSS Modules", "Chart.js"],
-    githubUrl: "#",
-    liveUrl: "#",
+    title: "Todo App",
+    description: "A Simple Todo App built with Javascript and styled with CSS Modules and it stores data in local storage.",
+    image: pro2,
+    techStack: ["JavaScript", "CSS Modules", "LocalStorage"],
+    githubUrl: "https://github.com/bhanuprakash1312/todoapp.git",
+    liveUrl: "https://bhanuprakash1312.github.io/todoapp/",
   },
   {
     id: 3,
-    title: "eCommerce UI",
-    description: "A sleek eCommerce interface with product listings, filtering, and a shopping cart implemented with context API.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=700&q=80",
-    techStack: ["React", "Context API", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "#",
-    liveUrl: "#",
+    title: "A Weather App",
+    description: "A Weather App built with Javascript and styled with Tailwind CSS.",
+    image: pro3,
+    techStack: ["html","css","Javascript"],
+    githubUrl: "https://github.com/bhanuprakash1312/weather-app.git",
+    liveUrl: "https://bhanuprakash1312.github.io/weather-app/",
   },
-  {
-    id: 4,
-    title: "Blog Platform",
-    description: "A minimalist blog platform with a clean, responsive design and markdown support for content creation.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80",
-    techStack: ["React", "Markdown", "CSS Grid", "React Router"],
-    githubUrl: "#",
-    liveUrl: "#",
-  },
+
 ];
 
 export const ProjectsSection = () => {

@@ -71,14 +71,7 @@ const skills: Skill[] = [
     color: "bg-[#F05032]/10 text-[#F05032] border-[#F05032]/20",
     description: "Version control, branching, collaboration"
   },
-  {
-    name: "RESTful APIs",
-    level: 80,
-    category: "frontend",
-    icon: <Database size={24} />,
-    color: "bg-[#0096FF]/10 text-[#0096FF] border-[#0096FF]/20",
-    description: "Consuming and integrating API endpoints"
-  },
+ 
   {
     name: "Responsive Design",
     level: 85,
