@@ -55,7 +55,7 @@ export const HeroSection = () => {
             className="mb-8"
           >
             <h1 className="mb-4">
-              <span className="block text-2xl md:text-3xl font-normal mb-2">Hi, I'm <span className="font-semibold">Alex</span> 👋</span>
+              <span className="block text-2xl md:text-3xl font-normal mb-2">Hi, I'm <span className="font-semibold">Bhanuprakash</span> 👋</span>
               <span className="gradient-heading font-bold">Frontend Developer</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground font-normal">

@@ -51,7 +51,7 @@ export const Navbar = () => {
           href="#home"
           className="font-bold text-xl sm:text-2xl gradient-heading"
         >
-          Dev.folio
+          Portfolio
         </a>
 
         {/* Desktop Nav */}

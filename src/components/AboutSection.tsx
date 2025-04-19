@@ -76,7 +76,7 @@ export const AboutSection = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Music className="text-accent" size={18} />
-                  <span>Playing guitar and discovering new music</span>
+                  <span>Playing Cricket</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Cpu className="text-accent" size={18} />
@@ -94,7 +94,7 @@ export const AboutSection = () => {
             <div className="relative aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-purple to-accent opacity-20 rounded-2xl -z-10 blur-3xl" />
               <div className="rounded-2xl overflow-hidden border border-border p-4 bg-card h-full flex items-center justify-center card-glow">
-                <Code size={80} className="text-primary opacity-90" />
+                {/* <Code size={80} className="text-primary opacity-90" /> */}
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary rounded-full opacity-30 blur-2xl" />
                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-purple rounded-full opacity-20 blur-2xl" />
               </div>
