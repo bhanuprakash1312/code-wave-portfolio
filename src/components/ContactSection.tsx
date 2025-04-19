@@ -221,7 +221,7 @@ export const ContactSection = () => {
                   <MailIcon size={20} />
                 </div>
                 <a
-                  href="bp136897@gmail.com"
+                  href="mailto:bp136897@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
                   bp136897@gmail.com
