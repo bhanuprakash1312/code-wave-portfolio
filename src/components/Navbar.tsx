@@ -3,13 +3,15 @@ import { useState, useEffect } from "react";
 import { useTheme } from "./ThemeProvider";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
+import { title } from "process";
 
 const navLinks = [
   { title: "Home", href: "#home" },
   { title: "About", href: "#about" },
   { title: "Skills", href: "#skills" },
   { title: "Projects", href: "#projects" },
-  { title: "Contact", href: "#contact" },
+  { title: "Contact", href: "#contact"},
+  {title: "Resume" , href: "#resume"},
 ];
 
 export const Navbar = () => {
