@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 
 export const ResumeSection = () => {
+  
   const educationData = [
     {
       degree: "Bachelor of Technology in Data Science",
