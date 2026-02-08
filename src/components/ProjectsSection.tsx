@@ -101,89 +101,98 @@ export const ProjectsSection = () => {
           animate={inView ? "visible" : "hidden"}
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
-          {projects.map((project) => (
-            <motion.div
-              key={project.id}
-              variants={projectVariants}
-              whileHover={{ y: -5 }}
-              className="bg-card border border-border rounded-xl overflow-hidden card-glow"
+       {projects.map((project) => (
+  <motion.div
+    key={project.id}
+    variants={projectVariants}
+    whileHover={{ y: -5 }}
+    className="bg-card border border-border rounded-xl overflow-hidden card-glow"
+  >
+    <div className="relative overflow-hidden aspect-video">
+      <img
+        src={project.image}
+        alt={project.title}
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+
+      {/* Hover Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+        <h3 className="text-white font-bold">{project.title}</h3>
+
+        <div className="flex gap-2">
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 bg-black/40 backdrop-blur-sm rounded-full hover:bg-black/60 transition-colors"
+            aria-label={`View ${project.title} source code on GitHub`}
+          >
+            <Github size={18} className="text-white" />
+          </a>
+
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 bg-black/40 backdrop-blur-sm rounded-full hover:bg-black/60 transition-colors"
+            aria-label={`View ${project.title} live demo`}
+          >
+            <ExternalLink size={18} className="text-white" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {/* Project Access Section (Always Visible) */}
+    <div className="p-4 border-t border-border text-sm text-muted-foreground">
+      <p className="font-medium">Project Access (Evaluation Only)</p>
+      <p>Username: <span className="text-foreground">bp136897@gmail.com</span></p>
+      <p>Password: <span className="text-foreground">bhanu1312</span></p>
+    </div>
+
+    <div className="p-6">
+      <div className="flex items-center gap-2 mb-4">
+        <Layers size={16} className="text-purple" />
+        <div className="flex flex-wrap gap-2">
+          {project.techStack.map((tech) => (
+            <span
+              key={tech}
+              className="text-xs px-2 py-1 bg-secondary/60 rounded-full"
             >
-              <div className="relative overflow-hidden aspect-video">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
-                  <div>
-                    <h3 className="text-white font-bold">{project.title}</h3>
-                  </div>
-                  <div className="flex gap-2">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-black/40 backdrop-blur-sm rounded-full hover:bg-black/60 transition-colors"
-                      aria-label={`View ${project.title} source code on GitHub`}
-                    >
-                      <Github size={18} className="text-white" />
-                    </a>
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-black/40 backdrop-blur-sm rounded-full hover:bg-black/60 transition-colors"
-                      aria-label={`View ${project.title} live demo`}
-                    >
-                      <ExternalLink size={18} className="text-white" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <Layers size={16} className="text-purple" />
-                  <div className="flex flex-wrap gap-2">
-                    {project.techStack.map((tech) => (
-                      <span
-                        key={tech}
-                        className="text-xs px-2 py-1 bg-secondary/60 rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-5">
-                  {project.description}
-                </p>
-
-                <div className="flex gap-4">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="button-ghost text-sm inline-flex items-center gap-1"
-                  >
-                    <Github size={16} />
-                    Source Code
-                  </a>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="button-secondary text-sm inline-flex items-center gap-1"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </motion.div>
+              {tech}
+            </span>
           ))}
+        </div>
+      </div>
+
+      <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+      <p className="text-muted-foreground text-sm mb-5">
+        {project.description}
+      </p>
+
+      <div className="flex gap-4">
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button-ghost text-sm inline-flex items-center gap-1"
+        >
+          <Github size={16} />
+          Source Code
+        </a>
+        <a
+          href={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button-secondary text-sm inline-flex items-center gap-1"
+        >
+          <ExternalLink size={16} />
+          Live Demo
+        </a>
+      </div>
+    </div>
+  </motion.div>
+))}
         </motion.div>
       </div>
     </section>
