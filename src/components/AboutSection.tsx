@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {  Cpu, Coffee, Music, Sparkles } from "lucide-react";
-import bhanu from "../asstets/bhanu.jpg"
+import bhanu from "../asstets/Bhanu_2025.jpg"
 
 export const AboutSection = () => {
   const [ref, inView] = useInView({
@@ -52,14 +52,14 @@ export const AboutSection = () => {
               variants={itemVariants}
               className="text-muted-foreground mb-4 text-lg"
             >
-              I'm a passionate frontend developer with a keen eye for design and a love for creating responsive, intuitive user interfaces.
+              I'm a passionate backend developer with a knack for building efficient and scalable web applications. With a strong foundation in Python and FastAPI, I specialize in creating robust APIs and data-driven solutions that power modern web experiences.
             </motion.p>
             
             <motion.p 
               variants={itemVariants}
               className="text-muted-foreground mb-6 text-lg"
             >
-              I build beautiful, responsive web experiences with React & modern CSS. My focus is on creating engaging user interfaces that are both functional and delightful to use.
+              I thrive on solving complex problems and delivering high-quality code that makes a real impact. When I'm not coding, you can find me exploring new coffee shops, playing cricket, or tinkering with the latest tech gadgets.
             </motion.p>
             
             <motion.div 

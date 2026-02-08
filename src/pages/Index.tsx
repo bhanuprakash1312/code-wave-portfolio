@@ -6,7 +6,7 @@ import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import {ResumeSection} from "@/components/Resumesection";
+import {ResumeSection} from "@/components/ResumeSection";
 
 const Index = () => {
   return (

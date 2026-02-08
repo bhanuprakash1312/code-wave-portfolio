@@ -56,10 +56,10 @@ export const HeroSection = () => {
           >
             <h1 className="mb-4">
               <span className="block text-2xl md:text-3xl font-normal mb-2">Hi, I'm <span className="font-semibold">Bhanuprakash</span> 👋</span>
-              <span className="gradient-heading font-bold">Frontend Developer</span>
+              <span className="gradient-heading font-bold">Backend Developer</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground font-normal">
-              React Enthusiast | UI Lover | Problem Solver
+              Python FastAPI | PGSQL | Problem Solver
             </h2>
           </motion.div>
 
@@ -69,7 +69,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto"
           >
-            I craft beautiful, responsive interfaces with modern frontend technologies, turning ideas into seamless user experiences.
+            I'm a passionate backend developer with a knack for building efficient and scalable applications. With expertise in Python, FastAPI, and PostgreSQL, I thrive on solving complex problems and delivering high-quality solutions.
           </motion.p>
 
           <motion.div

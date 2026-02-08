@@ -16,7 +16,7 @@ import {
 type Skill = {
   name: string;
   level: number;
-  category: "frontend" | "design" | "tools" | "learning";
+  category: "backend" | "design" | "tools" | "learning";
   icon: JSX.Element;
   color: string;
   description: string;
@@ -24,79 +24,48 @@ type Skill = {
 
 const skills: Skill[] = [
   {
-    name: "React",
+    name: "Python",
     level: 85,
-    category: "frontend",
+    category: "backend",
     icon: <Code2 size={24} />,
-    color: "bg-[#61DAFB]/10 text-[#61DAFB] border-[#61DAFB]/20",
-    description: "Building interactive UIs with reusable components"
+    color: "bg-[#3776AB]/10 text-[#3776AB] border-[#3776AB]/20",
+    description: "Writing clean, efficient code with strong OOP fundamentals"
   },
   {
-    name: "JavaScript",
-    level: 90,
-    category: "frontend",
+    name: "FastAPI",
+    level: 80,
+    category: "backend",
     icon: <Code2 size={24} />,
-    color: "bg-[#F7DF1E]/10 text-[#F7DF1E] border-[#F7DF1E]/20",
-    description: "ES6+, async/await, functional programming"
+    color: "bg-[#009688]/10 text-[#009688] border-[#009688]/20",
+    description: "Building high-performance REST APIs with async support"
   },
   {
-    name: "HTML & CSS",
-    level: 95,
-    category: "frontend",
-    icon: <Code2 size={24} />,
-    color: "bg-[#E34F26]/10 text-[#E34F26] border-[#E34F26]/20",
-    description: "Semantic markup, responsive layouts, animations"
+    name: "SQL & Databases",
+    level: 80,
+    category: "backend",
+    icon: <Database size={24} />,
+    color: "bg-[#336791]/10 text-[#336791] border-[#336791]/20",
+    description: "Schema design, joins, indexing, optimized queries"
   },
+
   {
-    name: "Tailwind CSS",
-    level: 90,
-    category: "frontend",
-    icon: <Palette size={24} />,
-    color: "bg-[#38B2AC]/10 text-[#38B2AC] border-[#38B2AC]/20",
-    description: "Utility-first CSS for rapid UI development"
-  },
-  {
-    name: "UI Design",
-    level: 75,
-    category: "design",
-    icon: <Layers size={24} />,
-    color: "bg-[#FF61F6]/10 text-[#FF61F6] border-[#FF61F6]/20",
-    description: "Creating intuitive user interfaces and experiences"
-  },
-  {
-    name: "Git",
+    name: "Git & GitHub",
     level: 80,
     category: "tools",
     icon: <GitBranch size={24} />,
     color: "bg-[#F05032]/10 text-[#F05032] border-[#F05032]/20",
     description: "Version control, branching, collaboration"
   },
- 
   {
-    name: "Responsive Design",
+    name: "API Integration",
     level: 85,
     category: "design",
     icon: <Scale size={24} />,
     color: "bg-[#9C27B0]/10 text-[#9C27B0] border-[#9C27B0]/20",
-    description: "Building interfaces that work on all devices"
-  },
-  {
-    name: "TypeScript",
-    level: 60,
-    category: "learning",
-    icon: <Cpu size={24} />,
-    color: "bg-[#3178C6]/10 text-[#3178C6] border-[#3178C6]/20",
-    description: "Currently expanding knowledge in typed JavaScript"
-  },
-  {
-    name: "Next.js",
-    level: 55,
-    category: "learning",
-    icon: <Sparkles size={24} />,
-    color: "bg-[#000000]/10 text-foreground border-foreground/20",
-    description: "Learning server-side rendering and optimizations"
+    description: "Integrating third-party APIs and handling responses"
   }
 ];
+
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -111,7 +80,7 @@ export const SkillsSection = () => {
 
   const categories = [
     { id: "all", label: "All Skills" },
-    { id: "frontend", label: "Frontend" },
+    { id: "backend", label: "Backend" },
     { id: "design", label: "Design" },
     { id: "tools", label: "Tools" },
     { id: "learning", label: "Learning Next" }

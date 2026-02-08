@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
+import resume from "../asstets/bp.pdf";
 
 export const ResumeSection = () => {
   
@@ -9,7 +10,7 @@ export const ResumeSection = () => {
       degree: "Bachelor of Technology in Data Science",
       institution: "Bapatla Engineering College",
       year: "2023 - 2027",
-      description: "Focused on web development, UI/UX design, and software engineering principles."
+      description: "Focused on Backend Development, Data Structures, and Algorithms. Completed projects on building RESTful APIs and data analysis using Python."
     }
   ];
 
@@ -22,23 +23,23 @@ export const ResumeSection = () => {
 //     }
 //   ];
 
-  const certificationData = [
-    {
-      name: "Modern React with Redux",
-      issuer: "Udemy",
-      date: "January 2023"
-    },
-    {
-      name: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      date: "March 2022"
-    },
-    {
-      name: "Responsive Web Design",
-      issuer: "Coursera",
-      date: "November 2021"
-    }
-  ];
+  // const certificationData = [
+  //   {
+  //     name: "Modern React with Redux",
+  //     issuer: "Udemy",
+  //     date: "January 2023"
+  //   },
+  //   {
+  //     name: "JavaScript Algorithms and Data Structures",
+  //     issuer: "freeCodeCamp",
+  //     date: "March 2022"
+  //   },
+  //   {
+  //     name: "Responsive Web Design",
+  //     issuer: "Coursera",
+  //     date: "November 2021"
+  //   }
+  // ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -147,40 +148,6 @@ export const ResumeSection = () => {
 
           {/* Right Column - Certifications */}
           <div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
-                <span className="bg-purple-500 h-5 w-1 rounded mr-3"></span>
-                Certifications
-              </h3>
-              
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="space-y-4"
-              >
-                {certificationData.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    variants={itemVariants}
-                    className="bg-white p-4 rounded-lg shadow-sm flex flex-col"
-                  >
-                    <h4 className="text-lg font-medium text-gray-900">{item.name}</h4>
-                    <div className="flex justify-between items-center mt-1">
-                      <p className="text-blue-600">{item.issuer}</p>
-                      <p className="text-gray-500 text-sm">{item.date}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
-            
             {/* Download Resume Button */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -190,7 +157,7 @@ export const ResumeSection = () => {
               className="mt-12 flex justify-center"
             >
               <a 
-                href="/resume.pdf" 
+                href={resume} 
                 download
                 className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all transform hover:scale-105 shadow-md"
               >

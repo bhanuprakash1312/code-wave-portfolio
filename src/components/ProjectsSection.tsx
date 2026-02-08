@@ -5,6 +5,7 @@ import { ExternalLink, Github, Layers } from "lucide-react";
 import pro1 from "../asstets/pro1.png";
 import pro2 from "../asstets/pro2.png";
 import pro3 from "../asstets/pro3.png";
+import aidp from "../asstets/aidp.png";
 type Project = {
   id: number;
   title: string;
@@ -18,31 +19,31 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Netflix Clone",
-    description: "A Netflix Clone  built with React , Firebase and styled with Tailwind CSS.",
-    image: pro1,
-    techStack: ["React", "Tailwind CSS", "DND Kit", "LocalStorage"],
-    githubUrl: "https://github.com/bhanuprakash1312/react.git",
-    liveUrl: "http://moviestream-rho.vercel.app/",
+    title: "AI Based Student Dropout Prediction System",
+    description: "A Machine Learning Project to predict student dropout using Python and FastAPI.",
+    image: aidp,
+    techStack: ["Python", "FastAPI", "Scikit-learn", "Pandas"],
+    githubUrl: "https://github.com/bhanuprakash1312/aidp",
+    liveUrl: "https://aidp-ochre.vercel.app/",
   },
-  {
-    id: 2,
-    title: "Todo App",
-    description: "A Simple Todo App built with Javascript and styled with CSS Modules and it stores data in local storage.",
-    image: pro2,
-    techStack: ["JavaScript", "CSS Modules", "LocalStorage"],
-    githubUrl: "https://github.com/bhanuprakash1312/todoapp.git",
-    liveUrl: "https://bhanuprakash1312.github.io/todoapp/",
-  },
-  {
-    id: 3,
-    title: "A Weather App",
-    description: "A Weather App built with Javascript and styled with Tailwind CSS.",
-    image: pro3,
-    techStack: ["html","css","Javascript"],
-    githubUrl: "https://github.com/bhanuprakash1312/weather-app.git",
-    liveUrl: "https://bhanuprakash1312.github.io/weather-app/",
-  },
+  // {
+  //   id: 2,
+  //   title: "Todo App",
+  //   description: "A Simple Todo App built with Javascript and styled with CSS Modules and it stores data in local storage.",
+  //   image: pro2,
+  //   techStack: ["JavaScript", "CSS Modules", "LocalStorage"],
+  //   githubUrl: "https://github.com/bhanuprakash1312/todoapp.git",
+  //   liveUrl: "https://bhanuprakash1312.github.io/todoapp/",
+  // },
+  // {
+  //   id: 3,
+  //   title: "A Weather App",
+  //   description: "A Weather App built with Javascript and styled with Tailwind CSS.",
+  //   image: pro3,
+  //   techStack: ["html","css","Javascript"],
+  //   githubUrl: "https://github.com/bhanuprakash1312/weather-app.git",
+  //   liveUrl: "https://bhanuprakash1312.github.io/weather-app/",
+  // },
 
 ];
 
